@@ -4,7 +4,7 @@ from datetime import datetime
 # Open log.txt to append a contribution entry
 with open("log.txt", "a") as file:
     # 70% chance to skip contributions on some days
-    if random.random() < 0.98:
+    if random.random() < 0.2:
         file.write(f"No contribution on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
         print("No contributions today!")
     else:
