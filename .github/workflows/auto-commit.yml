@@ -39,4 +39,4 @@ jobs:
         git config --local user.name "x-Error404-x"
         git add log.txt
         git commit -m "Automated contribution"
-        git push https://$TOKEN@github.com/souravsundar/flipkart.git
+        git push https://$TOKEN@github.com/x-Error404-x/wordlists.git
