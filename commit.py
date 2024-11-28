@@ -1,5 +1,5 @@
-import random
 from datetime import datetime
+import random
 
 # Open log.txt to append a contribution entry
 with open("log.txt", "a") as file:
@@ -7,8 +7,6 @@ with open("log.txt", "a") as file:
     if random.random() < 0.2:
         print("No contributions today!")
     else:
-        # Random number of contributions (between 3 and 9)
-        num_contributions = random.randint(3, 9)
-        for _ in range(num_contributions):
-            file.write(f"New Contribution on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-        print(f"{num_contributions} contributions made today!")
+        # Write just one contribution
+        file.write(f"New Contribution on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        print("1 contribution made today!")
