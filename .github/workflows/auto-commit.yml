@@ -2,7 +2,9 @@ name: Auto Commit
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Daily at midnight
+    - cron: '30 3 * * *'  # 9:00 AM IST
+    - cron: '30 6 * * *'  # 12:00 PM IST (Noon)
+    - cron: '30 16 * * *' # 10:00 PM IST
   workflow_dispatch:  # Manual trigger
 
 jobs:
