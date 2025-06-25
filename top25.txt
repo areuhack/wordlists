@@ -3,8 +3,8 @@ toor
 raspberry
 dietpi
 test
-uploader
 password
+uploader
 admin
 administrator
 marketing
